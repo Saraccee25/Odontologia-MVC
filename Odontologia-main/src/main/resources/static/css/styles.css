@@ -1,0 +1,191 @@
+:root {
+    --blanco: #fff;
+    --azul-claro: #B0C4DE;
+    --gris: #545252;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 30px;
+    background-color: var(--azul-claro);
+}
+
+nav ul {
+    list-style-type: none;
+    color: var(--gris);
+}
+
+nav ul#titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gestion {
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.gestion > span {
+    display: inline-block;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--gris);
+    color: var(--blanco);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 160px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.gestion.active .submenu {
+    display: block;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #DCDCDC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--gris);
+}
+
+.card form div {
+    margin-bottom: 15px;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gris);
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--gris);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+.card button:hover {
+    background-color: #3a3a3a; 
+}
+
+.card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+#fecha-alta{
+    font-family: "Outfit", sans-serif;
+}
+
+.card form div {
+    margin-bottom: 15px;
+}
+
+.card form div label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card form div input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.card form div input:focus {
+    border-color: var(--gris);
+    box-shadow: 0 0 5px var(--gris);
+    outline: none;
+}
+
+.card form div input:hover {
+    border-color: var(--gris);
+    background-color: #f0f0f0;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin: 10px 0 20px 0;
+    position: relative;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: none;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
