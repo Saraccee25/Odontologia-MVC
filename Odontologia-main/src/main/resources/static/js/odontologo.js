@@ -409,3 +409,87 @@ export function logicaListarOdontologos() {
             });
     }
 }
+
+//------------------------------------Buscar odontologo--------------------------------------------------------
+
+export function formBuscarOdontologo() {
+    document.querySelector('main').innerHTML = `
+        <div class="card">
+            <h1>Buscar Odontólogo por ID</h1>
+            <form id="buscar-odontologo-form">
+                <div>
+                    <label for="odontologo-id">ID del Odontólogo:</label>
+                    <input type="number" id="odontologo-id" name="odontologo-id" min="1" required>
+                    <small>El ID debe ser un número entero positivo.</small>
+                </div>
+                <div>
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <div id="odontologo-result" style="display:none; margin-top:10px"></div>
+        </div>
+    `;
+}
+
+export function logicaBuscarOdontologo() {
+    document.getElementById('buscar-odontologo').addEventListener('click', function () {
+        formBuscarOdontologo();
+
+        document.getElementById("buscar-odontologo-form").onsubmit = function (e) {
+            e.preventDefault();
+            const id = document.querySelector('#odontologo-id').value.trim();
+
+            if (!id || isNaN(id) || parseInt(id) <= 0) {
+                mostrarError('Debe ingresar un ID válido (entero positivo)');
+                return;
+            }
+
+            buscarOdontologo(id);
+        };
+
+        function buscarOdontologo(id) {
+            const url = `/odontologos/${id}`;
+            const settings = {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            };
+
+            fetch(url, settings)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Odontólogo no encontrado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    mostrarOdontologo(data);
+                })
+                .catch(error => {
+                    mostrarError('Odontólogo no encontrado. Por favor, verifique el ID e intente de nuevo.');
+                });
+        }
+
+        function mostrarOdontologo(odontologo) {
+            document.querySelector('#odontologo-result').innerHTML = `
+                <div class="alert alert-success" style="background:rgba(0, 255, 0, 0.2); padding: 1em; color: green; border-radius: 5px;">
+                    <h3>Odontólogo Encontrado:</h3>
+                    <p>ID: ${odontologo.id}</p>
+                    <p>Nombre: ${odontologo.nombre}</p>
+                    <p>Apellido: ${odontologo.apellido}</p>
+                    <p>Matrícula: ${odontologo.matricula}</p>
+                </div>`;
+            document.querySelector('#odontologo-result').style.display = 'block';
+        }
+
+        function mostrarError(mensaje) {
+            document.querySelector('#odontologo-result').innerHTML = `<div class="alert alert-danger alert-dismissible" style="background:rgba(255, 0, 0, 0.2);padding:.5em 1em;color: red;margin: .5em 0; border-radius: 5px;">
+                <p>${mensaje}</p></div>`;
+            document.querySelector('#odontologo-result').style.display = "block";
+            setTimeout(() => {
+                document.querySelector('#odontologo-result').style.display = "none";
+            }, 4000);
+        }
+    });
+}

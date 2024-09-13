@@ -1253,3 +1253,74 @@ com.digitalhouse.odontologia.exception.ResourceNotFoundException: Turno no encon
 [2024-09-10 22:16:43] [ INFO ] [PacienteService:114] Paciente ID: 7, Domicilio ID: 7
 [2024-09-10 22:16:43] [ INFO ] [PacienteService:114] Paciente ID: 8, Domicilio ID: 8
 [2024-09-10 22:17:14] [ WARN ] [PacienteService:29] Ya existe un paciente con el DNI: 12345
+[2024-09-10 22:29:57] [ INFO ] [OdontologoService:30] Odontólogo con ID: 35 guardado exitosamente.
+[2024-09-10 22:30:04] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-10 22:30:15] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-10 22:30:15] [ INFO ] [OdontologoService:59] Actualizando odontólogo con ID: 2
+[2024-09-10 22:30:15] [ INFO ] [OdontologoService:71] Odontólogo con ID: 2 actualizado exitosamente
+[2024-09-10 22:30:21] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-10 22:30:21] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-10 22:30:21] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-10 22:30:21] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-10 22:30:25] [ WARN ] [PacienteService:83] No se encontraron turnos en la base de datos.
+[2024-09-10 22:30:25] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-10 22:30:25] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-10 22:30:25] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-10 22:30:25] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-10 22:30:46] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-10 22:30:46] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-10 22:30:46] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-10 22:30:46] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-10 22:31:04] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-10 22:31:04] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-10 22:31:04] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-10 22:31:04] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-10 22:31:16] [ WARN ] [PacienteService:56] Turno no disponible. El odontólogo ya tiene un turno asignado en esa fecha y hora.
+[2024-09-12 20:22:48] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 20:22:48] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 20:22:48] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 20:22:48] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-12 20:22:53] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 20:22:53] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 20:22:53] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 20:22:53] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-12 20:29:05] [ INFO ] [OdontologoService:38] Odontólogo con ID: 1 encontrado exitosamente.
+[2024-09-12 20:29:12] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-12 20:29:14] [ INFO ] [OdontologoService:38] Odontólogo con ID: 3 encontrado exitosamente.
+[2024-09-12 20:30:38] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-12 20:30:43] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: -11
+[2024-09-12 20:30:48] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-12 20:30:51] [ INFO ] [OdontologoService:38] Odontólogo con ID: 3 encontrado exitosamente.
+[2024-09-12 20:30:53] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 6
+[2024-09-12 20:30:55] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 8
+[2024-09-12 20:31:41] [ INFO ] [OdontologoService:38] Odontólogo con ID: 1 encontrado exitosamente.
+[2024-09-12 20:31:44] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 11
+[2024-09-12 20:31:47] [ INFO ] [OdontologoService:38] Odontólogo con ID: 3 encontrado exitosamente.
+[2024-09-12 20:33:26] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 6
+[2024-09-12 20:33:29] [ INFO ] [OdontologoService:38] Odontólogo con ID: 4 encontrado exitosamente.
+[2024-09-12 20:33:38] [ INFO ] [OdontologoService:38] Odontólogo con ID: 34 encontrado exitosamente.
+[2024-09-12 20:37:51] [ INFO ] [OdontologoService:38] Odontólogo con ID: 35 encontrado exitosamente.
+[2024-09-12 20:38:00] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 20:38:00] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 20:38:00] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 20:38:00] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-12 20:38:09] [ WARN ] [PacienteService:54] No se encontró el paciente con ID: 25
+[2024-09-12 20:38:25] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 20:38:25] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 20:38:25] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 20:38:25] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-12 20:40:40] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 20:40:40] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 20:40:40] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 20:40:40] [ INFO ] [PacienteService:114] Paciente ID: 18, Domicilio ID: 18
+[2024-09-12 20:40:55] [ WARN ] [PacienteService:54] No se encontró el paciente con ID: 19
+[2024-09-12 20:41:00] [ WARN ] [PacienteService:54] No se encontró el paciente con ID: 3
+[2024-09-12 20:42:45] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-12 20:42:48] [ INFO ] [OdontologoService:38] Odontólogo con ID: 1 encontrado exitosamente.
+[2024-09-12 20:42:51] [ INFO ] [OdontologoService:38] Odontólogo con ID: 2 encontrado exitosamente.
+[2024-09-12 20:42:52] [ INFO ] [OdontologoService:38] Odontólogo con ID: 3 encontrado exitosamente.
+[2024-09-12 20:42:53] [ INFO ] [OdontologoService:38] Odontólogo con ID: 4 encontrado exitosamente.
+[2024-09-12 20:42:55] [ INFO ] [OdontologoService:38] Odontólogo con ID: 5 encontrado exitosamente.
+[2024-09-12 20:42:56] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 6
+[2024-09-12 20:42:59] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 7
+[2024-09-12 20:43:02] [ INFO ] [OdontologoService:38] Odontólogo con ID: 34 encontrado exitosamente.

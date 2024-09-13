@@ -1,5 +1,5 @@
-import { logicaAgregarPaciente,logicaEliminarPaciente, logicaModificarPaciente, logicaListarPacientes } from './paciente.js';
-import { logicaAgregarOdontologo, logicaEliminarOdontologo, logicaModificarOdontologo, logicaListarOdontologos } from './odontologo.js';
+import { logicaAgregarPaciente,logicaEliminarPaciente, logicaModificarPaciente, logicaListarPacientes, logicaBuscarPaciente } from './paciente.js';
+import { logicaAgregarOdontologo, logicaEliminarOdontologo, logicaModificarOdontologo, logicaListarOdontologos, logicaBuscarOdontologo} from './odontologo.js';
 import { logicaAgregarTurno, logicaListarTurnos, logicaEliminarTurno } from './turno.js';
 
 window.addEventListener("load", function () {
@@ -31,5 +31,8 @@ window.addEventListener("load", function () {
     logicaListarOdontologos();
     logicaListarPacientes();
     logicaListarTurnos();
+
+    logicaBuscarOdontologo();
+    logicaBuscarPaciente();
 
 });

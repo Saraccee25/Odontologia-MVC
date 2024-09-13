@@ -495,6 +495,92 @@ export function logicaListarPacientes() {
     }
 }
 
+//-----------------------------------Buscar Paciente----------------------------------------------------------------
+
+//-----------------------------------Buscar Paciente----------------------------------------------------------------
+
+export function formBuscarPaciente() {
+    document.querySelector('main').innerHTML = `
+        <div class="card">
+            <h1>Buscar Paciente</h1>
+            <form id="buscar-paciente-form">
+                <div>
+                    <label for="id">ID:</label>
+                    <input type="number" id="id" name="id" min="1" required>
+                </div>
+                <div>
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <div id="response" style="display:none; margin-top:10px"></div>
+        </div>
+    `;
+}
+
+export function logicaBuscarPaciente() {
+    document.getElementById('buscar-paciente').addEventListener('click', function () {
+        formBuscarPaciente();
+
+        document.getElementById("buscar-paciente-form").onsubmit = function (e) {
+            e.preventDefault();
+            const id = document.querySelector('#id').value.trim();
+
+            if (id && Number(id) > 0) {
+                buscarPaciente(id);
+            } else {
+                mostrarError('Por favor ingrese un ID válido.');
+            }
+        };
+
+        function buscarPaciente(id) {
+            const url = `/pacientes/${id}`;
+            const settings = {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            };
+
+            fetch(url, settings)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Paciente no encontrado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    mostrarPaciente(data);
+                })
+                .catch(error => {
+                    mostrarError('Paciente no encontrado.');
+                });
+        }
+
+        function mostrarPaciente(paciente) {
+            document.querySelector('#response').innerHTML = `
+                <div class="alert alert-success" style="background:rgba(0, 255, 0, 0.2); padding: 1em; color: green; border-radius: 5px;">
+                    <h3>Paciente Encontrado</h3>
+                    <p><strong>Nombre:</strong> ${paciente.nombre}</p>
+                    <p><strong>Apellido:</strong> ${paciente.apellido}</p>
+                    <p><strong>DNI:</strong> ${paciente.dni}</p>
+                    <p><strong>Fecha de Alta:</strong> ${paciente.fechaAlta}</p>
+                    <p><strong>Domicilio:</strong> ${paciente.domicilio.calle} ${paciente.domicilio.numero}, ${paciente.domicilio.localidad}, ${paciente.domicilio.provincia}</p>
+                </div>`;
+            document.querySelector('#response').style.display = "block";
+        }
+
+        function mostrarError(mensaje) {
+            document.querySelector('#response').innerHTML = `<div class="alert alert-danger alert-dismissible" style="background:rgba(255, 0, 0, 0.2);padding:.5em 1em;color: red;margin: .5em 0; border-radius: 5px;">
+                <p>${mensaje}</p></div>`;
+            document.querySelector('#response').style.display = "block";
+            setTimeout(() => {
+                document.querySelector('#response').style.display = "none";
+            }, 4000);
+        }
+    });
+}
+
+
 
 
 
