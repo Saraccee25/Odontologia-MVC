@@ -1324,3 +1324,53 @@ com.digitalhouse.odontologia.exception.ResourceNotFoundException: Turno no encon
 [2024-09-12 20:42:56] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 6
 [2024-09-12 20:42:59] [ WARN ] [OdontologoService:41] No se encontro el odontologo con ID: 7
 [2024-09-12 20:43:02] [ INFO ] [OdontologoService:38] Odontólogo con ID: 34 encontrado exitosamente.
+[2024-09-12 22:06:09] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:06:09] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:06:09] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:06:09] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:06:09] [ INFO ] [PacienteService:114] Paciente ID: 20, Domicilio ID: 20
+[2024-09-12 22:08:43] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:08:43] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:08:43] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:08:43] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:08:43] [ INFO ] [PacienteService:114] Paciente ID: 20, Domicilio ID: 20
+[2024-09-12 22:12:01] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:12:01] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:12:01] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:12:01] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:12:01] [ INFO ] [PacienteService:114] Paciente ID: 20, Domicilio ID: 20
+[2024-09-12 22:12:10] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:12:10] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:12:10] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:12:10] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:12:10] [ INFO ] [PacienteService:114] Paciente ID: 20, Domicilio ID: 20
+[2024-09-12 22:12:16] [ INFO ] [PacienteService:61] Intentando eliminar el paciente con ID: 20
+[2024-09-12 22:12:16] [ INFO ] [PacienteService:64] Paciente con ID: 20 eliminado exitosamente.
+[2024-09-12 22:12:18] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:12:18] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:12:18] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:12:18] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:13:47] [ INFO ] [OdontologoService:38] Odontólogo con ID: 1 encontrado exitosamente.
+[2024-09-12 22:13:48] [ INFO ] [OdontologoService:38] Odontólogo con ID: 1 encontrado exitosamente.
+[2024-09-12 22:13:48] [ INFO ] [OdontologoService:59] Actualizando odontólogo con ID: 1
+[2024-09-12 22:13:48] [ INFO ] [OdontologoService:71] Odontólogo con ID: 1 actualizado exitosamente
+[2024-09-12 22:25:38] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:25:38] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:25:38] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:25:38] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:28:22] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:28:22] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:28:22] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:28:22] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:42:19] [ INFO ] [PacienteService:73] Actualizando paciente con ID: 1
+[2024-09-12 22:42:19] [ INFO ] [PacienteService:84] Información del paciente antes de actualizar: Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:42:19] [ INFO ] [PacienteService:89] Paciente actualizado con ID: 1
+[2024-09-12 22:42:19] [ INFO ] [PacienteService:92] Domicilio del paciente actualizado con ID: 1
+[2024-09-12 22:42:22] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:42:22] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:42:22] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:42:22] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19
+[2024-09-12 22:42:37] [ INFO ] [PacienteService:108] Pacientes: 
+[2024-09-12 22:42:37] [ INFO ] [PacienteService:114] Paciente ID: 1, Domicilio ID: 1
+[2024-09-12 22:42:37] [ INFO ] [PacienteService:114] Paciente ID: 2, Domicilio ID: 2
+[2024-09-12 22:42:37] [ INFO ] [PacienteService:114] Paciente ID: 19, Domicilio ID: 19

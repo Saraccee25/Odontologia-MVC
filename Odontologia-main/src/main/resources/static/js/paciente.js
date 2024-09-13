@@ -232,18 +232,15 @@ export function formModificarPaciente() {
                 <div id="datos-paciente" style="display:none;">
                     <div>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]+">
-                        <small>Solo se permiten letras y espacios.</small>
+                        <input type="text" id="nombre" name="nombre">
                     </div>
                     <div>
                         <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]+">
-                        <small>Solo se permiten letras y espacios.</small>
+                        <input type="text" id="apellido" name="apellido">
                     </div>
                     <div>
                         <label for="dni">DNI:</label>
-                        <input type="text" id="dni" name="dni" pattern="\\d+" required>
-                        <small>Solo se permiten números.</small>
+                        <input type="text" id="dni" name="dni">
                     </div>
                     <fieldset>
                         <legend>Domicilio:</legend>
@@ -257,13 +254,11 @@ export function formModificarPaciente() {
                         </div>
                         <div>
                             <label for="localidad">Localidad:</label>
-                            <input type="text" id="localidad" name="localidad" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]+">
-                            <small>Solo se permiten letras y espacios.</small>
+                            <input type="text" id="localidad" name="localidad">
                         </div>
                         <div>
                             <label for="provincia">Provincia:</label>
-                            <input type="text" id="provincia" name="provincia" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]+">
-                            <small>Solo se permiten letras y espacios.</small>
+                            <input type="text" id="provincia" name="provincia">
                         </div>
                     </fieldset>
                     <div>
@@ -279,8 +274,6 @@ export function formModificarPaciente() {
         </div>
     `;
 }
-
-
 
 export function logicaModificarPaciente() {
     document.getElementById('modificar-paciente').addEventListener('click', function () {
@@ -495,7 +488,7 @@ export function logicaListarPacientes() {
     }
 }
 
-//-----------------------------------Buscar Paciente----------------------------------------------------------------
+
 
 //-----------------------------------Buscar Paciente----------------------------------------------------------------
 
